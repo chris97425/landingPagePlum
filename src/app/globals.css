@@ -1,26 +1,200 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #0088FF;
+  --text-color: #000000;
+  --background-color: #F5F5F7;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  flex-grow: 1;
+}
+
+.main-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-bottom: 4rem;
+}
+
+.hello-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--background-color);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 3rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  max-width: 48rem;
+  line-height: 1.2;
+}
+
+.main-title span {
+  text-decoration: underline;
+  text-decoration-color: var(--text-color);
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.qr-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  width: fit-content;
+  transition: transform 0.2s ease;
+}
+
+/* .qr-container:hover {
+  transform: scale(1.05);
+} */
+
+.qr-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.qr-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.qr-subtitle {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.store-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .qr-container {
+    padding: 1rem;
+  }
+}
+
+/* Chat Bubble Styles */
+.chat-bubble-container {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-top: 4rem;
+  max-width: 100%;
+  animation: slideUp 0.5s ease-out;
+  margin-bottom: 100px;
+
+}
+
+.chat-bubble {
+  position: relative;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  /* margin-bottom: 100px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* .chat-bubble::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  bottom: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  transform: rotate(45deg);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+} */
+.encoche {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -4px;
+  bottom: 0;
+  /* background-color: var(--primary-color); */
+}
+.chat-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
