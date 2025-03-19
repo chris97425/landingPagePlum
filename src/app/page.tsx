@@ -1,9 +1,8 @@
 "use client";
 
 import * as React from "react";
-import Image from 'next/image'
+import Image from "next/image"
 import { ChatBubble } from "@/components/ChatBubble";
-import { CTASection } from "@/components/CTASection";
 
 export default function Home() {
   return (
@@ -43,7 +42,7 @@ export default function Home() {
           height={80}
         />
         <div className="qr-text">
-          <span className="qr-title">L'application bientôt disponible</span>
+          <span className="qr-title">L&apos;application bientôt disponible</span>
           <span className="qr-subtitle">Scanner pour télécharger</span>
         </div>
       </div>
