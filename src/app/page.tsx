@@ -16,10 +16,10 @@ export default function Home() {
     checkIfMobile();
     
     // Add event listener
-    window.addEventListener('resize', checkIfMobile);
+    window.addEventListener("resize", checkIfMobile);
     
     // Cleanup
-    return () => window.removeEventListener('resize', checkIfMobile);
+    return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
   return (
@@ -58,7 +58,7 @@ export default function Home() {
 
       {/* Subtitle */}
       <p className="subtitle">
-        Garde d'enfants, garde d'animaux, ménage... <br /><b>plüm</b> adoucit votre journée.
+        Garde d&apos;enfants, garde d&apos;animaux, ménage... <br /><b>plüm</b> adoucit votre journée.
       </p>
 
       {/* QR Code Section - Desktop */}
