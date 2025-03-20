@@ -7,7 +7,7 @@ export const ChatBubble: React.FC = () => {
   return (
     <section className="chat-bubble-container">
       <Image
-        src="/avatar.png"
+        src="/avatarIa.png"
         alt="Chat avatar"
         width={84}
         height={84}
