@@ -9,10 +9,10 @@ export default function Home() {
     <main className="main-content">
       {/* Logo */}
       <Image 
-        src="/plum_logo_noir.svg"
+        src="/plum_logo.svg"
         alt="Plüm Logo"
-        width={300}
-        height={80}
+        width={320}
+        height={90}
         className="logo"
         priority
       />
@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* Subtitle */}
       <p className="subtitle">
-        Cuisine, babysitting, ménage...Plüm adoucit votre journée.
+        Garde d'enfants, garde d'animaux, ménage... <b>plüm</b> adoucit votre journée.
       </p>
 
       {/* QR Code Section */}
