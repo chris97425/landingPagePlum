@@ -65,7 +65,7 @@ export default function Home() {
       {!isMobile && (
         <div className="qr-container">
           <Image
-            src="/qr-code 1.png"
+            src="/qr-code-1.png"
             alt="QR Code"
             width={80}
             height={80}
@@ -89,7 +89,7 @@ export default function Home() {
          {/* Store Buttons */}
          <div className="store-buttons">
         <Image
-          src="/Apple - Google play.png"
+          src="/apple-google-play.png"
           alt="App Store and Google Play buttons"
           width={300}
           height={40}
