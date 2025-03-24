@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Plüm - ease your life",
-  description: "Cuisine, babysitting, ménage...Plüm adoucit votre journée.",
+  description: "Garde d'enfants, ménage-linge, garde d'animaux domestiques...Plüm adoucit votre journée.",
 }
 
 export default function RootLayout({
