@@ -18,6 +18,49 @@ body {
   color: var(--text-color);
   min-height: 100vh;
 }
+.box-location {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 20px;
+  min-width: 125px;
+  text-align: center;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 30px;
+}
+.qr-title-button {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: white;
+  min-width:250px;
+  text-align: center;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.button-link {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.button-link:hover .button-container {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  /* transform: translateY(-2px); */
+}
 
 .main-content {
   display: flex;
@@ -151,7 +194,7 @@ body {
   display: flex;
   gap: 0.5rem;
   align-items: flex-start;
-  margin-top: 4rem;
+  margin-top: 2rem;
   max-width: 100%;
   animation: slideUp 0.5s ease-out;
   margin-bottom: 100px;

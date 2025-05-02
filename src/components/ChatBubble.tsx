@@ -9,8 +9,8 @@ export const ChatBubble: React.FC = () => {
       <Image
         src="/avatarIa.png"
         alt="Chat avatar"
-        width={84}
-        height={84}
+        width={40}
+        height={40}
         className="chat-avatar"
       />
     
