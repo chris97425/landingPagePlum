@@ -24,6 +24,7 @@ export default function Home() {
   }, []);
 
   const handleRecruitmentClick = (e: React.MouseEvent) => {
+    console.log("click", e);
     posthog.capture('surveyRecrutement');
   };
 
@@ -89,7 +90,7 @@ export default function Home() {
       <a href="https://plumservices.typeform.com/recrutement?utm_source=website" className="button-link" onClick={handleRecruitmentClick}>
       <div className="button-container">
           <div className="qr-text">
-            <span className="qr-title-button">Rejoignez l'aventure!</span>
+            <span className="qr-title-button">Rejoignez l&apos;aventure!</span>
           </div>
         </div>
       </a>
