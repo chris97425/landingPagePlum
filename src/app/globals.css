@@ -14,18 +14,21 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: 'var(--background-color)';
   color: var(--text-color);
   min-height: 100vh;
 }
 .box-location {
   border: 1px solid black;
-  padding: 15px;
+  /* padding: 15px; */
   border-radius: 20px;
-  min-width: 125px;
-  text-align: center;
+  /* min-wdth: 125px; */
+  padding-left: 10px;
+  padding-right: 10px;
+
   font-size: 14px;
   justify-content: center;
+  /* padding-left: 10px; */
   align-items: center;
   display: flex;
   height: 30px;

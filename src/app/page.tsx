@@ -54,7 +54,7 @@ export default function Home() {
             height={16}
             style={{ marginRight: '4px' }}
           />
-          <span style={{ fontSize: '14px' }}>Saint-Denis</span>
+          <span style={{ fontSize: '14px' }}>Saint-Denis </span>
         </div>
         <div className="box-location">
           <Image 
@@ -64,7 +64,7 @@ export default function Home() {
             height={16}
             style={{ marginRight: '4px' }}
           />
-          <span style={{ fontSize: '14px' }}>Saint-Paul</span>
+          <span style={{ fontSize: '14px' }}>Saint-Paul </span>
         </div>
       </div>
       <div className="main-title-container">
@@ -83,7 +83,7 @@ export default function Home() {
 
       {/* Subtitle */}
       <p className="subtitle">
-        Garde d&apos;enfants, ménage & linge... <br />Nous recrutons notre première équipe de prestataires...
+        Garde d&apos;enfants, ménage & linge... <br />Nous recrutons notre première équipe de prestataires.
       </p>
 
       <a href="https://plumservices.typeform.com/recrutement?utm_source=website" className="button-link" onClick={handleRecruitmentClick}>
