@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: 'var(--background-color)';
+  background-color: var(--background-color);
   color: var(--text-color);
   min-height: 100vh;
 }
@@ -22,7 +22,7 @@ body {
   border: 1px solid black;
   /* padding: 15px; */
   border-radius: 20px;
-  /* min-wdth: 125px; */
+  /* min-width: 125px; */
   padding-left: 10px;
   padding-right: 10px;
 
@@ -195,6 +195,7 @@ body {
 /* Chat Bubble Styles */
 .chat-bubble-container {
   display: flex;
+  background-color: var(--background-color);
   gap: 0.5rem;
   align-items: flex-start;
   margin-top: 2rem;
