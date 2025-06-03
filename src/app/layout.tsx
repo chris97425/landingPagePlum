@@ -19,6 +19,7 @@ export default function RootLayout({
       <PostHogProvider>
       <body className={inter.className}>{children}</body>
       </PostHogProvider>
+      
     </html>
   )
 } 

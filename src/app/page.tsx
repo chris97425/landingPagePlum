@@ -23,7 +23,7 @@ export default function Home() {
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
-  const handleRecruitmentClick = (e: React.MouseEvent) => {
+  const handleRecruitmentClick = () => {
     posthog.capture('surveyRecrutement');
   };
 
@@ -89,7 +89,7 @@ export default function Home() {
       <a href="https://plumservices.typeform.com/recrutement?utm_source=website" className="button-link" onClick={handleRecruitmentClick}>
       <div className="button-container">
           <div className="qr-text">
-            <span className="qr-title-button">Rejoignez l'aventure!</span>
+            <span className="qr-title-button">Rejoignez l&apos;aventure!</span>
           </div>
         </div>
       </a>
@@ -99,7 +99,7 @@ export default function Home() {
    
       </div>
          {/* Store Buttons */}
-         <div className="store-buttons">
+         <div className="store-buttons" style={{ flexDirection:   'column' , gap: '50px'}}>
         <Image
           src="/apple-google-play.png"
           alt="App Store and Google Play buttons"
@@ -108,7 +108,28 @@ export default function Home() {
           className="store-buttons-image"
 
         />
+         <a
+        href="/politique_confidentialite"
+        className=""
+        style={{
+          textDecoration: 'underline',
+          zIndex: 50,
+          // position: isMobile ? 'relative' : 'absolute',
+          bottom: '20px',
+          right: isMobile ? '0px' : '10px',
+          color: 'black',
+          backgroundColor: 'white',
+          padding: '10px',
+          borderRadius: '5px',
+          fontSize: '12px',
+        }}
+      >
+        Politique de confidentialité
+      </a>
       </div>
+     
+
+      
     </main>
   );
 } 
