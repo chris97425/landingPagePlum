@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   const handleRecruitmentClick = () => {
-    posthog.capture('surveyRecrutement');
+ posthog.capture('surveyRecrutement');
   };
 
   return (

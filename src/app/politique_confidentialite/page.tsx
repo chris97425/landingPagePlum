@@ -73,7 +73,7 @@ export default function PolitiqueConfidentialite() {
                 <svg style={{ width: '1.25rem', height: '1.25rem', marginRight: isMobile ? '0' : '0.5rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-                {!isMobile && 'Acceuil'}
+                {!isMobile && 'Accueil'}
               </Link>
 
               {/* Logo - centered on mobile */}
